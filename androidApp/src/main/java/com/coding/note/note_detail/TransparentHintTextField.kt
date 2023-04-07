@@ -34,7 +34,7 @@ fun TransparentHintTextField(
                     onFocusChanged(state)
                 }
         )
-        if(isHintVisible) {
+        if (isHintVisible) {
             Text(
                 text = hint,
                 style = textStyle,

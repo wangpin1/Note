@@ -49,7 +49,7 @@ class NoteDetailViewModel @Inject constructor(
 
     init {
         savedStateHandle.get<Long>("noteId")?.let { existingNoteId ->
-            if(existingNoteId == -1L) {
+            if (existingNoteId == -1L) {
                 return@let
             }
             this.existingNoteId = existingNoteId

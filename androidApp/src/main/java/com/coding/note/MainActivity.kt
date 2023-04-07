@@ -80,9 +80,8 @@ class MainActivity : ComponentActivity() {
                                 defaultValue = -1L
                             }
                         )
-                    ) { backStackEntry ->
-                        val noteId = backStackEntry.arguments?.getLong("noteId") ?: -1L
-                        NoteDetailScreen(noteId = noteId, navController = navController)
+                    ) {
+                        NoteDetailScreen(navController = navController)
                     }
                 }
             }

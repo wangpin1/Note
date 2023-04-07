@@ -21,7 +21,6 @@ import androidx.navigation.NavController
 
 @Composable
 fun NoteDetailScreen(
-    noteId: Long,
     navController: NavController,
     viewModel: NoteDetailViewModel = hiltViewModel()
 ) {
